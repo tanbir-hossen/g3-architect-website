@@ -36,12 +36,48 @@ nav li a {
 .banner-content {
   max-width: 862px;
   text-align: center;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 .banner-title {
   font-size: 64px;
   color: #131313;
+  margin-bottom: 30px;
 }
 .banner-content > p {
   color: #727272;
+  margin-bottom: 30px;
+}
+.btn-primary {
+  font-size: 1.25rem;
+  padding: 20px 25px;
+  color: #fff;
+  border-style: none;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #ff900e;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+}
+
+/* responsive styles for small or mobile devices*/
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* responsive styles for medium or tablet devices*/
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
