@@ -25,6 +25,7 @@
 }
 header {
   background: rgba(255, 144, 14, 0.1);
+  padding-bottom: 20px;
 }
 nav {
   display: flex;
@@ -48,6 +49,9 @@ nav li {
 nav li a {
   text-decoration: none;
   color: var(--clr-secondary);
+}
+p {
+  color: var(--clr-text);
 }
 .heading-button {
   max-width: 862px;
@@ -76,20 +80,99 @@ img {
   width: 75%;
   display: block;
   margin: auto;
-  padding-bottom: 20px;
 }
 
 /* // main section style start here */
-
-.team-sec {
-  margin: 0 4rem;
-  padding: 2rem;
+main {
+  background-color: white;
+  margin: 0 240px;
 }
-.team-image-grid {
+/* team sectino style */
+.team-container {
+  display: flex;
+  align-items: center;
+  padding: 85px 60px 130px 60px;
+}
+.team-image-container {
   display: grid;
-  grid-template-columns: repeat(1fr, 2);
-  gap: 0.3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
-.team-image-grid > img {
-  width: 30%;
+.team-image-container > img {
+  width: 342px;
+}
+.team-content-container {
+  padding-left: 73px;
+  padding-right: 40px;
+}
+.team-content-container > h2,
+p {
+  margin-bottom: 20px;
+}
+h2,
+span {
+  font-size: var(--fs-semi-medium);
+}
+.quick-list {
+  color: var(--clr-text);
+  font-weight: var(--fw-medium);
+}
+.feature {
+  color: var(--clr-accent);
+}
+
+/* fact section styling starts from here */
+.fact {
+  margin: 0 auto;
+}
+.fact > p {
+  width: 542px;
+  margin-top: 24px;
+}
+.fact-card-container {
+  display: flex;
+  margin: 100px 50px;
+}
+.fact-card {
+  border: 1px solid var(--clr-accent);
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+  margin-right: 124px;
+  flex: 1;
+}
+.fact-card > img {
+  width: 45px;
+  margin: 0 auto;
+}
+.fact-number {
+  color: var(--clr-secondary);
+  font-weight: var(--fw-semibold);
+}
+.fact-card > p {
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-medium);
+}
+.fact-card-last {
+  margin-right: 0;
+}
+
+/* sponsors section styling start here  */
+.sponsors {
+  text-align: center;
+}
+.sponsors > h2 {
+  margin-bottom: 24px;
+}
+.sponsors > p {
+  margin-bottom: 50px;
+  max-width: 542px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+.sponsors-logo {
+  display: flex;
+}
+.sponsors-logo > img {
+  width: 160px;
 }
