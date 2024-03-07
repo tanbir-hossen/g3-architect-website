@@ -121,9 +121,54 @@ span {
   color: var(--clr-accent);
 }
 
+/* feature section styling from here */
+.feature-section {
+  display: flex;
+  gap: 120px;
+  flex: 1;
+  padding-bottom: 180px;
+}
+.feature-content {
+  max-width: 586px;
+}
+.feature-content > h2 {
+  max-width: 468px;
+  padding-left: 20px;
+  border-left: 4px solid var(--clr-accent);
+  margin-bottom: 24px;
+}
+.feature-content > p {
+  margin-bottom: 30px;
+}
+.feature-card {
+  background-color: whitesmoke;
+  padding: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 10px 10px var(--clr-text);
+  border-radius: 5px;
+}
+.experience-badage {
+  color: white;
+  background-color: var(--clr-accent);
+  max-width: 270px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  padding: -100px;
+}
+.experience-badage > span {
+  font-size: var(--fs-big);
+  font-weight: var(--fw-bold);
+}
+.experience-badage > p {
+  color: white;
+}
+
 /* fact section styling starts from here */
 .fact {
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 .fact > p {
   width: 542px;
@@ -132,13 +177,13 @@ span {
 .fact-card-container {
   display: flex;
   margin: 100px 50px;
+  gap: 120px;
 }
 .fact-card {
   border: 1px solid var(--clr-accent);
   border-radius: 5px;
   padding: 30px;
   text-align: center;
-  margin-right: 124px;
   flex: 1;
 }
 .fact-card > img {
@@ -153,13 +198,11 @@ span {
   font-size: var(--fs-medium);
   font-weight: var(--fw-medium);
 }
-.fact-card-last {
-  margin-right: 0;
-}
 
 /* sponsors section styling start here  */
 .sponsors {
   text-align: center;
+  margin-bottom: 150px;
 }
 .sponsors > h2 {
   margin-bottom: 24px;
@@ -175,4 +218,18 @@ span {
 }
 .sponsors-logo > img {
   width: 160px;
+}
+
+/* footer styling start here */
+footer {
+  max-width: 1440px;
+  background-color: #fff4e7;
+  margin: 30px auto;
+  padding: 1rem;
+  border-radius: 5px;
+}
+footer > p {
+  font-size: var(--fs-medium);
+  text-align: center;
+  margin-bottom: 0;
 }
